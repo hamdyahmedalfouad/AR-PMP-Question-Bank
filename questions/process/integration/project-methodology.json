@@ -1,0 +1,19 @@
+{
+  "id": "PROCESS-INTEGRATION-0001",
+  "domain": "process",
+  "task": "Select the project management methodology",
+  "type": "multiple-choice",
+  "stimulus": "A company that has traditionally run projects using a predictive approach is about to start a new product development project. The product requirements are expected to change frequently based on customer feedback.",
+  "question": "Which project lifecycle should the project manager recommend for this project?",
+  "options": [
+    "A. Predictive lifecycle, to keep the scope well defined",
+    "B. Iterative lifecycle, to refine the product through repeated cycles",
+    "C. Incremental lifecycle, to deliver the product in small usable parts",
+    "D. Adaptive lifecycle, to respond to changing requirements through short iterations"
+  ],
+  "answer": 3,
+  "explanation": "Adaptive lifecycles (agile) are designed for projects where requirements are expected to change frequently and value is delivered through short iterations with customer feedback. A predictive lifecycle would lock scope too early, and while iterative and incremental lifecycles can refine or deliver in parts, the decisive factor here is the expectation of frequent change driven by customer feedback — which points squarely at an adaptive approach.",
+  "source": "Original — modeled on AR Udemy Unit: Project Life Cycles and Development Approaches",
+  "difficulty": "easy",
+  "tags": ["integration", "agile", "hybrid", "mindset"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "TEMPLATE-XXXXXX-0000",
+  "domain": "people",
+  "task": "Short task label within the domain",
+  "type": "multiple-choice",
+  "stimulus": "Optional scenario text the question refers to. Delete this field if not needed.",
+  "question": "The question stem (>= 10 characters).",
+  "options": [
+    "A. First option",
+    "B. Second option",
+    "C. Third option",
+    "D. Fourth option"
+  ],
+  "answer": 0,
+  "explanation": "AR-style explanation (>= 20 characters): state the best answer, why it is best, and why the others are wrong.",
+  "source": "e.g. AR Udemy — Unit 3: Mindset (never a verbatim copy)",
+  "difficulty": "medium",
+  "tags": ["mindset"]
+}

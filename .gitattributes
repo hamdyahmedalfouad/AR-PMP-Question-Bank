@@ -1,0 +1,9 @@
+# Normalize line endings — checkout CRLF on Windows, commit LF everywhere.
+* text=auto
+
+# Explicitly force LF for scripts so CI (Linux) and local (Windows) agree.
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

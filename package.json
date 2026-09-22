@@ -1,0 +1,15 @@
+{
+  "name": "ar-pmp-question-bank",
+  "version": "0.1.0",
+  "description": "PMP question bank inspired by the Andrew Ramdayal (AR) Udemy course — structured, validated, and open source.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-questions.mjs",
+    "test": "node --test scripts/test/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
