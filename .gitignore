@@ -12,6 +12,9 @@ Desktop.ini
 node_modules/
 npm-debug.log*
 
+# Playwright test artifacts
+.playwright-mcp/
+
 # Local study artifacts (never version)
 *-scores.*
 *.local.json
