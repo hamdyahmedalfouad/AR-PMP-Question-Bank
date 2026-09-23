@@ -5,12 +5,19 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node scripts/build-standalone.mjs",
     "validate": "node scripts/validate-questions.mjs",
     "quiz": "node scripts/quiz.mjs",
     "test": "node --test scripts/test/"
   },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
   "engines": {
     "node": ">=18"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
 }
