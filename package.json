@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate-questions.mjs",
+    "quiz": "node scripts/quiz.mjs",
     "test": "node --test scripts/test/"
   },
   "engines": {

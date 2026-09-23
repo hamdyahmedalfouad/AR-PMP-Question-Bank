@@ -51,12 +51,32 @@ node scripts/validate-questions.mjs
 
 # Validate a single file
 node scripts/validate-questions.mjs questions/path/to/file.json
+
+# Take a quiz (all questions, shuffled)
+npm run quiz
+
+# 10 questions from the People + Process domains
+npm run quiz -- --count 10 --domains people,process
 ```
+
+## Quiz runner
+
+`npm run quiz` presents questions one at a time. Answer with a letter (`a`),
+a number (`1`), or a comma-separated list for multi-answer questions (`a,c`).
+After each answer you get instant feedback with the full AR-style explanation;
+a session summary with your score and missed question IDs is shown at the end.
+Type `q` to quit early.
+
+| Flag | Meaning |
+| --- | --- |
+| `-n, --count <n>` | Number of questions (default: all) |
+| `-d, --domains <list>` | Restrict to domains, e.g. `people,process` |
+| `--no-shuffle` | Present questions in file order |
 
 ## Roadmap
 
 - [ ] Seed initial question set (mindset + first AR units)
-- [ ] CLI quiz runner (`npm run quiz`)
+- [x] CLI quiz runner (`npm run quiz`)
 - [ ] Web/Anki export
 - [ ] Progress tracking & missed-question review
 
