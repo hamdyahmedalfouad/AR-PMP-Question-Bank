@@ -24,6 +24,7 @@ with every question written in our own words and a `source`-style provenance
 | Performance dashboard | KPIs, accuracy band, per-difficulty & per-section breakdowns (accuracy computed on **answered** questions only) |
 | Keyboard | `A–D` / `1–4` select an option, `←` / `→` navigate |
 | Offline-ready | Tailwind CSS + Inter font are inlined by the build — zero CDN dependencies |
+| **Download app (HTML)** | One click on the dashboard downloads the **entire app as a single HTML file** (`PMP-Question-Bank.html`) — all 296 questions + styles + fonts included, works offline by double-click |
 | Export | Full bank or review queue as CSV (Excel-compatible, BOM + quoted cells) |
 | Persistence | Your progress, missed queue, and bookmarks live in `localStorage` — nothing leaves your machine |
 
