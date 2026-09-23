@@ -13,6 +13,20 @@ with every question written in our own words and a `source`-style provenance
 
 **https://hamdyahmedalfouad.github.io/AR-PMP-Question-Bank/**
 
+## Download for offline use
+
+Grab the **entire app as one HTML file** straight from GitHub — no account,
+no build step. The asset is regenerated automatically on every update, so this
+link always points at the latest build:
+
+**[⬇ Download `PMP-Question-Bank.html` (latest build)](https://github.com/hamdyahmedalfouad/AR-PMP-Question-Bank/releases/download/v1.0.0/PMP-Question-Bank.html)**
+
+Double-click the downloaded file and it runs fully offline — all 296 questions,
+styles, and fonts included, nothing leaves your machine. Alternatives:
+
+- Raw file (same content, always current): [`index.html`](https://raw.githubusercontent.com/hamdyahmedalfouad/AR-PMP-Question-Bank/main/index.html) — right-click → *Save As*
+- Inside the app itself: the **Download App (HTML)** button on the dashboard saves a fresh copy anytime
+
 ## Features
 
 | Feature | Details |
@@ -24,7 +38,7 @@ with every question written in our own words and a `source`-style provenance
 | Performance dashboard | KPIs, accuracy band, per-difficulty & per-section breakdowns (accuracy computed on **answered** questions only) |
 | Keyboard | `A–D` / `1–4` select an option, `←` / `→` navigate |
 | Offline-ready | Tailwind CSS + Inter font are inlined by the build — zero CDN dependencies |
-| **Download app (HTML)** | One click on the dashboard downloads the **entire app as a single HTML file** (`PMP-Question-Bank.html`) — all 296 questions + styles + fonts included, works offline by double-click |
+| **Download app (HTML)** | One click on the dashboard downloads the **entire app as a single HTML file** (`PMP-Question-Bank.html`) — all 296 questions + styles + fonts included, works offline by double-click. The same file is also a **GitHub Release asset** ([direct download, always latest](https://github.com/hamdyahmedalfouad/AR-PMP-Question-Bank/releases/download/v1.0.0/PMP-Question-Bank.html)) |
 | Export | Full bank or review queue as CSV (Excel-compatible, BOM + quoted cells) |
 | Persistence | Your progress, missed queue, and bookmarks live in `localStorage` — nothing leaves your machine |
 
@@ -79,7 +93,8 @@ question content — saved history is keyed by ID.
 ├── tailwind.config.js        # mirror of the app's original inline Tailwind config
 └── .github/workflows/
     ├── pages.yml             # builds + deploys index.html to GitHub Pages
-    └── validate.yml          # CI: validates questions + runs unit tests on push/PR
+    ├── validate.yml          # CI: validates questions + runs unit tests on push/PR
+    └── standalone-release.yml# re-uploads PMP-Question-Bank.html to the v1.0.0 release asset on every main push
 ```
 
 ## Roadmap

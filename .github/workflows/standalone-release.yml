@@ -1,0 +1,36 @@
+name: standalone-release
+
+# Keeps the GitHub Release asset PMP-Question-Bank.html (used for one-click
+# downloads straight from GitHub) in sync with the latest build on main.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-asset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build standalone index.html (inline Tailwind CSS + fonts)
+        run: npm run build
+
+      - name: Upload standalone HTML to the v1.0.0 release asset
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp index.html PMP-Question-Bank.html
+          gh release upload v1.0.0 PMP-Question-Bank.html --clobber
